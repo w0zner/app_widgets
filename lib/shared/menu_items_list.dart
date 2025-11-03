@@ -21,7 +21,7 @@ final appMenuItems = <MenuItems>[
     icon: Icons.person,
   ),
   MenuItems(
-    title: 'buttons',
+    title: 'Buttons',
     subtitle: 'Get assistance',
     route: '/buttons',
     icon: Icons.smart_button_outlined,
