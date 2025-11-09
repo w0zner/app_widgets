@@ -59,6 +59,9 @@ class ButtonView extends StatelessWidget {
               label: Text('Text Button icon'),
             ),
             IconButton(onPressed: () {}, icon: Icon(Icons.ac_unit)),
+
+            CustomButton(),
+
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.account_circle_outlined),
@@ -77,3 +80,54 @@ class ButtonView extends StatelessWidget {
     );
   }
 }
+
+class CustomButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final colors = Theme.of(context).colorScheme;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(8),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: () {
+            ScaffoldMessenger.of(
+              context,
+            ).showSnackBar(SnackBar(content: Text('Hola Mundo')));
+          },
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text('Custom Button', style: TextStyle(color: Colors.white)),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/* class CustomButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text('Hola Mundo'),
+          ),
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.blue,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: Text(
+          'Custom Button',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+    );
+  }
+} */
