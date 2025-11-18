@@ -9,16 +9,16 @@ final appMenuItems = <MenuItems>[
     icon: Icons.home,
   ),
   MenuItems(
-    title: 'Settings',
+    title: 'Snackbar',
     subtitle: 'Adjust your preferences',
-    route: '/settings',
+    route: '/snackbar',
     icon: Icons.settings,
   ),
   MenuItems(
-    title: 'Profile',
+    title: 'Progress',
     subtitle: 'View your profile',
-    route: '/profile',
-    icon: Icons.person,
+    route: '/progress',
+    icon: Icons.bar_chart,
   ),
   MenuItems(
     title: 'Buttons',

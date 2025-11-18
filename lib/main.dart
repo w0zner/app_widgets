@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       routerConfig: appRouter,
-      title: 'Material App',
+      title: 'Flutter Widget',
       theme: AppTheme(selectedColor: 1).getTheme(),
       //home: Home(),
       // Forma antigua de definir rutas
