@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routerConfig: appRouter,
       title: 'Flutter Widget',
-      theme: AppTheme(selectedColor: 1).getTheme(),
+      theme: AppTheme(selectedColor: 5).getTheme(),
       //home: Home(),
       // Forma antigua de definir rutas
       /*       routes: {

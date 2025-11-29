@@ -28,4 +28,6 @@ class AppTheme {
       appBarTheme: const AppBarTheme(centerTitle: true),
     );
   }
+
+  Color get primaryColor => colorList[selectedColor];
 }
